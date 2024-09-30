@@ -1,0 +1,12 @@
+
+img {
+	display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height:300px;
+}
+body{
+  background-color:rgb(208, 223, 238);
+}
+

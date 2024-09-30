@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Collection</title>
+  
+    </head>
+    <link rel="stylesheet" href="style4.css">
+<body>
+    <h1>User Registration</h1>
+    <form action ="/register"method="post>
+        <fieldset>
+            <legend>Basic Informatio </legend>
+            <label for="full name">Full Name</label>
+            <input type = "text" id="full name" name="full-name"required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password"name="password"required>
+
+            <label for ="date-of-birth">Date of Birth</label>
+            <input type="date" id="date-of-birth" name="date-of-birth"required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male"required>
+            <label for ="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female"required>
+            <label for ="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other"required>
+            <label for ="other">Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="phone">Phone Number:</label>
+            <input type ="tel" id ="phone" name="phone">
+            
+            <label for ="Contry">Country</label>
+            <select id ="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+            </fieldset>
+
+        <fieldset>
+            <legend>Interest</legend>
+
+            <input type="checkbox" id="clothes" name="interest" value="clothes">
+            <label for ="clothes">Clothes</label>
+
+            <input type="checkbox" id="electronics" name="interest" value="electronics">
+            <label for ="electronics">Electronics</label>
+
+            
+            <input type="checkbox" id="toys" name="interest" value="toys">
+            <label for ="toys">Toys</label>
+
+            
+            <input type="checkbox" id="housegoods" name="interest" value="housegoods">
+            <label for ="housegoods">House Goods</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>inventory</legend>
+
+            <label for ="inventory-lists">Please select one</label> 
+                <select id="inventory-list"name="inventory_list">
+                <option value ="toys">Toys</option>
+                <option value ="clothes">Clothes</option>
+                <option value ="electronics">Electronics</option>
+                <option value ="housegoods">House Goods</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <h2>Inventory</h2>
+            <table class="inventory" border="1">
+                <tr>
+                    <th>Category</th>
+                    <th>Number Sold</th>
+                    <th>Number Available</th>
+                </tr>
+                <tr>
+                    <td>Toys</td>
+                    <td>15</td>
+                    <td>234</td>
+                </tr>
+                <tr>
+                    <td>Clothes</td>
+                    <td>145</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>Electronics</td>
+                    <td>38</td>
+                    <td>115</td>
+                </tr>
+                <tr>
+                    <td>House goods</td>
+                    <td>453</td>
+                    <td>434</td>
+                </tr>
+                
+
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terms And Contitions</legend>
+
+            <input type="checkbox"id="agree-terms" name="agree-terms"required>
+            <label for="agree-terms"> I agree to the <a href="/terms" target ="_blank">Terms And Conditions</a></label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+    </body>
+    </html>
